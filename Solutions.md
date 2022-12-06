@@ -12,8 +12,9 @@ Download Page
 Installation Guide
 - https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
-If you have any issues creating the VM locally, you can use this online VM to get access to Linux Mint
+If you have any issues creating the VM locally, you can use this free online VM platform to get access to Linux Mint
 - https://www.onworks.net/component/content/article?id=65735:free-linux-mint-online
+Just click on "run online" and it will spin up a new Mint OS machine for you.
 
 </details>
 
