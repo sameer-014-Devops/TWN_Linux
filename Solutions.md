@@ -56,8 +56,7 @@ Breakdown of command that gets java version:
 
 
 *Detailed explanation of `2>&1`:
-
-Every time, we execute a program or a command, operating system opens three files: **standard input**, **standard output**, and **standard error**, and each file gets a file descriptor integer from the OS: 0, 1, and 2, respectively.So 2>&1 simply says redirect standard error (2) to standard output (1). The `&` before `1` in this case, means whatever follows is a file descriptor, not a filename. 
+Every time, we execute a program or a command, operating system opens three files: **standard input**, **standard output**, and **standard error**, and each file gets a file descriptor integer from the OS: 0, 1, and 2, respectively. So 2>&1 simply says redirect standard error (2) to standard output (1). The `&` before `1` in this case, means whatever follows is a file descriptor, not a filename. 
 
 Explanation of `if else` script:
 - In the if else checks, we check if the $java_version variable has no value at all or empty value, it means we have no java installation at all
