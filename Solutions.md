@@ -54,7 +54,8 @@ Breakdown of command that gets java version:
 - `grep "java version\|openjdk version"` simply finds a line in the output that has "java version" or "openjdk version" in it. The example line will look like this: openjdk version "11.0.16" 2022-07-19
 - `awk '{print substr($3,2,2)}` takes the line from the previous output and grabs the third section of the string "11.0.16" and from there grabs the first 2 characters, which will be "11"
 
-* Detailed explanation of `2>&1`:
+
+*Detailed explanation of `2>&1`:
 
 Every time, we execute a program or a command, operating system opens three files: **standard input**, **standard output**, and **standard error**, and each file gets a file descriptor integer from the OS: 0, 1, and 2, respectively.So 2>&1 simply says redirect standard error (2) to standard output (1). The `&` before `1` in this case, means whatever follows is a file descriptor, not a filename. 
 
