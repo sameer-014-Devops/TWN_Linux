@@ -54,6 +54,9 @@ Breakdown of command that gets java version:
 - `grep "java version\|openjdk version"` simply finds a line in the output that has "java version" or "openjdk version" in it. The example line will look like this: openjdk version "11.0.16" 2022-07-19
 - `awk '{print substr($3,2,2)}` takes the line from the previous output and grabs the third section of the string "11.0.16" and from there grabs the first 2 characters, which will be "11"
 
+*detailed explanation of `2>&1`
+Every time, we execute a program or a command, operating system opens three files: **standard input**, **standard output**, and **standard error**, and each file gets a file descriptor integer from the OS: 0, 1, and 2, respectively.So 2>&1 simply says redirect standard error (2) to standard output (1). The `&` before `1` in this case, means whatever follows is a file descriptor, not a filename. 
+
 Explanation of if else script:
 - In the if else checks, we check if the $java_version variable has no value at all or empty value, it means we have no java installation at all
 - If you have an older version of java already installed, like 1.6, 1.7, 1.8, then the value of `"$java_version"` will be `"1."` - first 2 characters. So with `"$java_version" == "1."`, we check whether `java_version` variable is `"1."`. This means installing latest java version was not successful, since you still have only the old version.
