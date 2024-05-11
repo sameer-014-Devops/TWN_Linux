@@ -135,7 +135,7 @@ Vim Commands:
 - `su -` = Login as root
 <!-- -->
 - `sudo groupadd [groupname]` = Create new group (System assigns next available GID)
-- `sudo adduser [username]` = Switch to Insert Mode
+- `sudo adduser [username]` = Create new user (System assigns next available UID)
 
 **Note 2 different User/Group commands:**<br />
 `adduser`, `addgroup`, `deluser`,  `delgroup` = interactive, more user friendly commands<br />
